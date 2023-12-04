@@ -1,0 +1,33 @@
+<head>
+    <!-- Load plotly.js into the DOM -->
+    <script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <label for="pib">le taux du PIB</label>
+        <input type="number" name="" id="pib">
+
+        <label for="chomage">Le taux de chômage</label>
+        <input type="number" name="" id="chomage">
+
+        <label for="inflation">Le taux d'inflation</label>
+        <input type="number" name="" id="inflation">
+
+        <label for="btc">Solde en % du PIB</label>
+        <input type="number" name="" id="btc">
+    </div>
+    <button id="btnaffichage">
+        Afficher le carré de KALDOR
+    </button>
+    <h1>
+        le carré magique de KALDOR de l'année
+    </h1>
+
+    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+</body>
+
+<script src="java.js">
+
+</script>
