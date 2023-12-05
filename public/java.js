@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(inflation);
         console.log(chomage);
 
-
         const data = [
             {
                 type: 'scatterpolar',
@@ -49,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             },
             showlegend: false,
-            width: 370, // Définissez la largeur souhaitée
-            height: 600 // Définissez la hauteur souhaitée
+            width: 370,
+            height: 600
         };
 
         Plotly.newPlot("myDiv", data, layout);
