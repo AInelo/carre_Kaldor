@@ -77,14 +77,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const data2000 = [
         {
             type: 'scatterpolar',
-            r: [9, 8, 6, 4, 9],
+            r: [7.7, 15.9, 9.16, 5.7, 7.7],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         },
 
         {
             type: 'scatterpolar',
-            r: [5, 10, 10, 10, 5],
+            r: [15, 20, 10, 10, 15],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         }
@@ -94,14 +94,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const data2005 = [
         {
             type: 'scatterpolar',
-            r: [9, 8, 6, 4, 9],
+            r: [6.6, 11.7, 9.17, 5.7, 6.6],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         },
 
         {
             type: 'scatterpolar',
-            r: [5, 10, 10, 10, 5],
+            // r: [5, 10, 10, 10, 5],
+            r: [15, 20, 10, 10, 15],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         }
@@ -111,14 +112,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const data2010 = [
         {
             type: 'scatterpolar',
-            r: [9, 8, 6, 4, 9],
+            r: [4.4, 12.1, 8.9, 9.1, 4.4],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         },
 
         {
             type: 'scatterpolar',
-            r: [5, 10, 10, 10, 5],
+            r: [15, 20, 10, 10, 15],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         }
@@ -128,14 +129,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const data2015 = [
         {
             type: 'scatterpolar',
-            r: [9, 8, 6, 4, 9],
+            r: [4.04, 11.8, 7.9, 9.1, 4.04],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         },
 
         {
             type: 'scatterpolar',
-            r: [5, 10, 10, 10, 5],
+            r: [15, 20, 10, 10, 15],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         }
@@ -145,14 +146,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const data2020 = [
         {
             type: 'scatterpolar',
-            r: [9, 8, 6, 4, 9],
+            r: [8.2, 13.8, 8.3, 7.1, 8.2],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         },
 
         {
             type: 'scatterpolar',
-            r: [5, 10, 10, 10, 5],
+            r: [15, 20, 10, 10, 15],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         }
