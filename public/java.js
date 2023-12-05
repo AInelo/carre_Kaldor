@@ -67,8 +67,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const btnbenin = document.getElementById('btnBenin');
     const choixAnnee = document.getElementById('choixAnnee')
+
+    const tableData = document.getElementById('tableData')
     btnbenin.addEventListener('click', function () {
         choixAnnee.style.display = 'flex';
+        tableData.style.display = 'block'
     })
 
     const data2000 = [
