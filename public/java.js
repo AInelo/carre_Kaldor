@@ -6,18 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const infl = document.getElementById('inflation');
     const btnAffichage = document.getElementById('btnaffichage');
 
-    // const inflNaturel = parseFloat(infl.value);
-    // const chmgNaturel = parseFloat(chmg.value);
-
-    // const inflation = 10 - inflNaturel;
-    // const chomage = 10 - chmgNaturel;
-
-    // console.log(inflation);
-    // console.log(chomage);
-
-
-
-
     btnAffichage.addEventListener('click', function () {
 
         const inflNaturel = parseFloat(infl.value);
