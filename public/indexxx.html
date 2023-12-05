@@ -1,0 +1,87 @@
+<head>
+    <!-- Load plotly.js into the DOM -->
+    <script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="./java.js">
+
+    </script>
+</head>
+
+<body class="justify-center">
+
+
+
+
+    <main class="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 gap-4">
+        <!-- Premier groupe d'éléments -->
+        <div>
+            <label for="tauxCroissancePib" class="block text-sm font-medium leading-6 text-gray-900">Taux de croissance
+                du PIB</label>
+            <div class="relative mt-2 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class="text-gray-500 sm:text-sm">%</span>
+                </div>
+                <input type="text" name="tauxCroissancePib" id="pib"
+                    class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="0.00">
+            </div>
+        </div>
+
+        <div>
+            <label for="price1" class="block text-sm font-medium leading-6 text-gray-900">Le taux de chômage</label>
+            <div class="relative mt-2 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class="text-gray-500 sm:text-sm">%</span>
+                </div>
+                <input type="text" name="price1" id="chomage"
+                    class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="0.00">
+            </div>
+        </div>
+
+        <!-- Deuxième groupe d'éléments -->
+        <div>
+            <label for="price2" class="block text-sm font-medium leading-6 text-gray-900">Le taux d'inflation</label>
+            <div class="relative mt-2 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class="text-gray-500 sm:text-sm">%</span>
+                </div>
+                <input type="text" name="price2" id="inflation"
+                    class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="0.00">
+            </div>
+        </div>
+
+        <div>
+            <label for="price3" class="block text-sm font-medium leading-6 text-gray-900">Solde en % du PIB</label>
+            <div class="relative mt-2 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class="text-gray-500 sm:text-sm">%</span>
+                </div>
+                <input type="text" name="price3" id="btc"
+                    class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="0.00">
+            </div>
+        </div>
+
+        <button type="button" id="btnaffichage"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Afficher
+            le Carré Magique de KALDOR</button>
+    </main>
+
+
+
+
+
+    <aside>
+        <h1>
+            le carré magique de KALDOR de l'année
+        </h1>
+
+        <div id='myDiv'>
+            <!-- Plotly chart will be drawn inside this DIV -->
+        </div>
+    </aside>
+
+
+</body>

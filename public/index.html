@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Page</title>
+    <!-- Ajoutez vos liens CSS ou CDN ici -->
+    <script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="./java.js">
+
+    </script>
+
+
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen">
+
+    <!-- <header class="bg-gray-800 text-white py-4 w-full text-center">
+        <h1 class="text-2xl font-bold">Le Carré Magic de KALDOR</h1>
+        <p class="text-sm">Entrez les données correspondantes et obtenez le carré de KALDOR</p>
+    </header> -->
+
+    <header class="bg-gray-800 text-white py-4 w-full text-center md:py-6 lg:py-8">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">Le Carré Magic de KALDOR</h1>
+        <p class="text-sm md:text-base lg:text-lg">Entrez les données </p>
+    </header>
+
+
+    <main class="flex flex-wrap justify-center gap-4 lg:justify-start p-6">
+        <!-- Premier groupe d'éléments -->
+        <div class="mb-4">
+            <label for="tauxCroissancePib" class="block text-sm font-medium leading-6 text-gray-900">Taux de croissance
+                du PIB</label>
+            <div class="relative mt-2 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class="text-gray-500 sm:text-sm">%</span>
+                </div>
+                <input type="text" name="tauxCroissancePib" id="pib"
+                    class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="0.00">
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="chomage" class="block text-sm font-medium leading-6 text-gray-900">Le taux de chômage</label>
+            <div class="relative mt-2 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class="text-gray-500 sm:text-sm">%</span>
+                </div>
+                <input type="text" name="chomage" id="chomage"
+                    class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="0.00">
+            </div>
+        </div>
+
+        <!-- Deuxième groupe d'éléments -->
+        <div class="mb-4">
+            <label for="inflation" class="block text-sm font-medium leading-6 text-gray-900">Le taux d'inflation</label>
+            <div class="relative mt-2 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class="text-gray-500 sm:text-sm">%</span>
+                </div>
+                <input type="text" name="inflation" id="inflation"
+                    class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="0.00">
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="btc" class="block text-sm font-medium leading-6 text-gray-900">Solde en % du PIB</label>
+            <div class="relative mt-2 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <span class="text-gray-500 sm:text-sm">%</span>
+                </div>
+                <input type="text" name="btc" id="btc"
+                    class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="0.00">
+            </div>
+        </div>
+
+        <button type="button" id="btnaffichage"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Afficher
+            le Carré Magique de KALDOR</button>
+    </main>
+
+    <aside class="mt-8">
+
+        <div id='myDiv'>
+
+            <!-- Plotly chart will be drawn inside this DIV -->
+        </div>
+
+        <button type="button" id="btnaffichage"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Afficher
+            Voir pour le Bénin</button>
+    </aside>
+
+
+
+
+    <footer class="bg-gray-800 text-white py-4 w-full text-center mt-auto">
+        <p class="text-sm">&copy; 2023 Votre Entreprise. Tous droits réservés.</p>
+        <p class="text-sm">Contact : <a href="mailto:totonlionel@gmail.com">totonlionel@gmail.com</a></p>
+        <p class="text-sm">Téléphone : <a href="tel:+22996769716">+229 96 76 97 16</a></p>
+        <p class="text-sm">Adresse : Cocotomey, Abomey-Calavi</p>
+    </footer>
+</body>
+
+</html>
