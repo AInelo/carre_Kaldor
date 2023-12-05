@@ -6,11 +6,39 @@ document.addEventListener("DOMContentLoaded", function () {
     const infl = document.getElementById('inflation');
     const btnAffichage = document.getElementById('btnaffichage');
 
+    // const inflNaturel = parseFloat(infl.value);
+    // const chmgNaturel = parseFloat(chmg.value);
+
+    // const inflation = 10 - inflNaturel;
+    // const chomage = 10 - chmgNaturel;
+
+    // console.log(inflation);
+    // console.log(chomage);
+
+
+
+
     btnAffichage.addEventListener('click', function () {
+
+        const inflNaturel = parseFloat(infl.value);
+        const chmgNaturel = parseFloat(chmg.value);
+        const btcNaturel = parseFloat(btc.value);
+        const pibNaturel = parseFloat(pib.value);
+
+
+        const inflation = 10 - inflNaturel;
+        const chomage = 10 - chmgNaturel;
+
+        console.log(inflation);
+        console.log(chomage);
+
+
         const data = [
             {
                 type: 'scatterpolar',
-                r: [parseFloat(btc.value), parseFloat(pib.value), parseFloat(chmg.value), parseFloat(infl.value), parseFloat(btc.value)],
+                r: [btcNaturel, pibNaturel, chomage, inflation, btcNaturel],
+                // r: [3, 9, 2, 1, 3],
+                // r: [3, 9, 8, 9, 3],
                 theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
                 fill: 'toself'
             },

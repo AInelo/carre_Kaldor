@@ -15,9 +15,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(initial_path, "index.html"));
 })
 
-const port = 3000;
-const ipAddress = "192.168.1.106";
+// const port = 3000;
+// const ipAddress = "192.168.1.106";
 
-app.listen(port, ipAddress, () => console.log(`Le serveur tourne sur ${port}`));
+app.listen(PORT, () => console.log(`Le serveur tourne sur ${PORT}`));
 
 
