@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ];
 
 
-
         const layout = {
             polar: {
                 radialaxis: {
@@ -76,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const data2000 = [
         {
             type: 'scatterpolar',
-            r: [parseFloat(btc.value), parseFloat(pib.value), parseFloat(chmg.value), parseFloat(infl.value), parseFloat(btc.value)],
+            r: [9, 8, 6, 4, 9],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         },
@@ -93,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const data2005 = [
         {
             type: 'scatterpolar',
-            r: [parseFloat(btc.value), parseFloat(pib.value), parseFloat(chmg.value), parseFloat(infl.value), parseFloat(btc.value)],
+            r: [9, 8, 6, 4, 9],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         },
@@ -110,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const data2010 = [
         {
             type: 'scatterpolar',
-            r: [parseFloat(btc.value), parseFloat(pib.value), parseFloat(chmg.value), parseFloat(infl.value), parseFloat(btc.value)],
+            r: [9, 8, 6, 4, 9],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         },
@@ -127,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const data2015 = [
         {
             type: 'scatterpolar',
-            r: [parseFloat(btc.value), parseFloat(pib.value), parseFloat(chmg.value), parseFloat(infl.value), parseFloat(btc.value)],
+            r: [9, 8, 6, 4, 9],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         },
@@ -144,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const data2020 = [
         {
             type: 'scatterpolar',
-            r: [parseFloat(btc.value), parseFloat(pib.value), parseFloat(chmg.value), parseFloat(infl.value), parseFloat(btc.value)],
+            r: [9, 8, 6, 4, 9],
             theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
             fill: 'toself'
         },
@@ -158,42 +157,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ];
 
-
-
-
-    btnAffichageBenin.addEventListener('click', function () {
-        const data = [
-            {
-                type: 'scatterpolar',
-                r: [parseFloat(btc.value), parseFloat(pib.value), parseFloat(chmg.value), parseFloat(infl.value), parseFloat(btc.value)],
-                theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
-                fill: 'toself'
-            },
-
-            {
-                type: 'scatterpolar',
-                r: [5, 10, 10, 10, 5],
-                theta: ['%BTC', '%PIB', '%chomage', '%INFL', '%BTC'],
-                fill: 'toself'
+    const layout = {
+        polar: {
+            radialaxis: {
+                visible: false,
+                range: [0, 20]
             }
+        },
+        showlegend: false,
+        width: 370, // Définissez la largeur souhaitée
+        height: 600 // Définissez la hauteur souhaitée
+    };
 
-        ];
 
-
-
-        const layout = {
-            polar: {
-                radialaxis: {
-                    visible: false,
-                    range: [0, 20]
-                }
-            },
-            showlegend: false,
-            width: 370, // Définissez la largeur souhaitée
-            height: 600 // Définissez la hauteur souhaitée
-        };
-
-        Plotly.newPlot("myDiv", data, layout);
+    btnAnnee2000.addEventListener('click', function () {
+        Plotly.newPlot("myBenin", data2000, layout);
     });
+
+    btnAnnee2005.addEventListener('click', function () {
+        Plotly.newPlot("myBenin", data2005, layout);
+    });
+    btnAnnee2010.addEventListener('click', function () {
+        Plotly.newPlot("myBenin", data2010, layout);
+    });
+    btnAnnee2015.addEventListener('click', function () {
+        Plotly.newPlot("myBenin", data2015, layout);
+    });
+    btnAnnee2020.addEventListener('click', function () {
+        Plotly.newPlot("myBenin", data2020, layout);
+    });
+
 });
 
